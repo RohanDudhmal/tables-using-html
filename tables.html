@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+  <!--Table is nothing but arrangement of data in the form of rows and columns-->
+  <!--table tag(to create table),thead(headings of table),tbody(actual content of table),tfoot(summerization of entire table)
+   td(to insert the heading),tr(table rows tag-creates rows of table),td(table data tag-data of table)-->
+<h2>Tables:</h2>
+<table border="1">
+
+    <thead>
+        <!--thead defies header of table-->
+        
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </thead>
+
+    <tbody>
+        <!--tbody defies main body of a table-->
+
+        <Tr>
+            <td>T001234</td>
+            <td>Rohan</td>
+            <td>male</td>
+            <td>21</td>
+        </Tr>
+        <tr>
+            <td>T001235</td>
+            <td>Yogesh</td>
+            <td>male</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>T001236</td>
+            <td>Vinita</td>
+            <td>female</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>T001237</td>
+            <td>saumya</td>
+            <td>female</td>
+            <td>20</td>
+        </tr>
+
+    <!--rowspan=" "(this extends your row as your requirement)-->
+    <!--colspan=" "(this extends your cloumn as your requirement)-->
+    </tbody>
+</table>
+
+<span style="background-color: rgb(243, 130, 130);">This is use of rowspan :</span>
+
+<table border="1">
+    <thead>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </thead>
+    <tr>
+        <td>T001234</td>
+        <td>Rohan</td>
+        <td>male</td>
+        <td rowspan="2">21</td>
+    </tr>  
+    <tr>
+        <td>T001235</td>
+        <td>Yogesh</td>
+        <td>male</td>
+    </tr>   
+    <tr>
+        <td>T001236</td>
+        <td>Vinita</td>
+        <td>female</td>
+        <td rowspan="2">20</td>
+    </tr>
+    <tr>
+        <td>T001237</td>
+        <td>saumya</td>
+        <td>female</td>
+    </tr>
+    <tbody></tbody>
+</table>
+
+<span style="background-color: rgb(243, 130, 130);">This is use of colspan :</span>
+
+<!--border attribute in table tag ddfies borders to the table and we can set the border values-->
+<table border="1">
+
+    <thead>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </thead>
+
+    <tbody>
+
+        <Tr>
+            <td>T001234</td>
+            <td>Rohan</td>
+            <td>male</td>
+            <td>21</td>
+        </Tr>
+        <tr>
+            <td>T001235</td>
+            <td colspan="2">Yogesh</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>T001236</td>
+            <td>Vinita</td>
+            <td>female</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>T001237</td>
+            <td colspan="2">saumya</td>
+            <td>20</td>
+        </tr>
+
+    </tbody>
+    
+</table>
+
+</body>
+</html>
